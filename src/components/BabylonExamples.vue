@@ -7,13 +7,13 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import { StandardMaterials } from "@/BabylonExamples/StandardMaterials";
+import { PBR } from "@/BabylonExamples/PBR";
 
 export default defineComponent({
-  name: 'BabylonExamples',
+  name: 'PBR',
   mounted() {
     const canvas: HTMLCanvasElement = document.querySelector("canvas") as HTMLCanvasElement;
-    new StandardMaterials(canvas);
+    new PBR(canvas);
     }
 });
 </script>
